@@ -24,3 +24,12 @@ textarea {
     display: inline-block;
     margin: 5px 0;
 }
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+.fadetext {
+    display: inline-block;
+}
