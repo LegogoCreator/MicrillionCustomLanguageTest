@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+textarea {
+    width: 100%;
+    font-family: monospace;
+}
+
+#preview {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    min-height: 100px;
+}
+
+.blueredbox {
+    background-color: blue;
+    color: white;
+    border: 2px solid red;
+    padding: 5px;
+    display: inline-block;
+    margin: 5px 0;
+}
