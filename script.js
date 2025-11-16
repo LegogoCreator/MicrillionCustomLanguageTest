@@ -30,6 +30,13 @@ function renderCustomCode(code) {
         }
     });
 
+    // fadetext tag
+output = output.replace(/{fadetext duration="(.*?)"}([\s\S]*?){\|fadetext}/g, (match, duration, text) => {
+    // duration in seconds, default to 2 if not set
+    const dur = parseFloat(duration) || 2;
+    return `<span class="fadetext" style="animation: fadeOut ${dur}s forwards;">${text}</span>`;
+});
+
     return output;
 }
 
