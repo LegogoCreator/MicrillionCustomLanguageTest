@@ -47,9 +47,9 @@ previewBtn.addEventListener('click', () => {
 
 // Export button
 exportBtn.addEventListener('click', () => {
-    const blob = new Blob([codeInput.value], { type: 'text/plain' });
+    const blob = new Blob([codeInput.value], { type: 'application/octet-stream' });
     const link = document.createElement('a');
-    link.download = 'code.mcl';
+    link.download = 'code.mcl';  // Android will keep this now
     link.href = URL.createObjectURL(blob);
     link.click();
 });
